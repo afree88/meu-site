@@ -1,72 +1,72 @@
 ---
 layout: 'base.html'
-description: "Meta description for the page"
-metaTitle: 'Title that shows up on google searches'
-tagTitle: 'About'
+description: "Meta descrição para a página"
+metaTitle: 'Título que aparece nas buscas do Google'
+tagTitle: 'Sobre'
 preloadImg: '/images/cabinets2-1920w.webp'
 preloadCSS: '/css/about.css'
-permalink: 'about/'
+permalink: 'sobre/'
 eleventyNavigation:
-    key: About Us
+    key: Sobre Nós
     order: 200
 ---
 
-<!-- Enter html code below -->
+<!-- Insira o código HTML abaixo -->
 
 <!-- ============================================ -->
-<!--                    LANDING                   -->
+<!--                    INÍCIO                    -->
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">About Us</h1>
-  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+  <h1 id="home-h">Sobre Nós</h1>
+  {% image './src/images/cabinets2.jpg', 'armários', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
-<!--                 Side By Side                 -->
+<!--                 Lado a Lado                  -->
 <!-- ============================================ -->
 
 <section id="sbs">
   <div class="cs-container">
-    <!-- Left Image Section -->
+    <!-- Seção da Imagem à Esquerda -->
     <div class="cs-left">
-      {% image './src/images/cabinets2.jpg', 'cabinets', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+      {% image './src/images/cabinets2.jpg', 'armários', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/construction.jpg', 'casa', 'cs-picture cs-picture2', 'lazy'%}
     </div>
-    <!-- Right Content Section-->
+    <!-- Seção de Conteúdo à Direita -->
     <div class="cs-right">
-      <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">About Company Title</h2>
+      <span class="cs-topper">Sobre Nós</span>
+      <h2 class="cs-title">Sobre a Empresa</h2>
       <p class="cs-text">
-                In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-            </p>
+        O texto de exemplo descreve a empresa e seus valores. Pode ser substituído por um conteúdo real sobre a história e missão da empresa.
+      </p>
       <p class="cs-text">
-                In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-            </p>
+        Outro parágrafo explicando os serviços oferecidos e como a empresa se destaca no mercado.
+      </p>
       <div class="cs-flex-group">
         <p class="cs-flex-p">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                </p>
+          Uma citação ou depoimento pode ser incluída aqui para reforçar a credibilidade.
+        </p>
         <span class="cs-name">Justin Time</span>
-        <span class="cs-job">CEO-Founder</span>
-        <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+        <span class="cs-job">CEO-Fundador</span>
+        <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="aspas" width="136" height="77">
       </div>
-      <a href="" class="button-solid">More About Us</a>
+      <a href="" class="button-solid">Mais Sobre Nós</a>
     </div>
   </div>
 </section>
 
 <!-- ============================================ -->
-<!--             Final Call to Action             -->
+<!--             Chamado para Ação                -->
 <!-- ============================================ -->
 
 <section id="cta">
   <div class="container">
-    <h2 class="title">Get It Done <br> With Us Today</h2>
+    <h2 class="title">Realize Seu Projeto <br> Conosco Hoje</h2>
     <p>
-            Say something catchy, informative, and encouraging to click the button to go to the contact page.  I like to add these to the bottom of all pages.
-        </p>
-    <a href="/contact.html" class="button-solid">Free Estimate</a>
+      Uma mensagem chamativa, informativa e incentivadora para que o visitante clique no botão e vá para a página de contato.
+    </p>
+    <a href="/contact.html" class="button-solid">Orçamento Grátis</a>
   </div>
-  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}
+  {% image './src/images/cabinets2.jpg', 'armários de cozinha', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}
 </section>

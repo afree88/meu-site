@@ -1,73 +1,68 @@
 ---
 layout: 'base.html'
-description: 'Meta description for the page'
-metaTitle: 'Title that shows up on google searches'
-tagTitle: 'Projects'
+description: 'Meta descrição para a página'
+metaTitle: 'Título que aparece nas pesquisas do Google'
+tagTitle: 'Projetos'
 preloadImg: '/images/cabinets2-1920w.webp'
 preloadCSS: '/css/projects.css'
-permalink: 'projects/'
+permalink: 'projetos/'
 eleventyNavigation:
-    key: Projects
+    key: Projetos
     order: 300
 ---
 
-<!-- Enter html code below -->
+<!-- Insira o código HTML abaixo -->
 
 <!-- ============================================ -->
-<!--                    LANDING                   -->
+<!--                    CABEÇALHO                  -->
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">Our Projects</h1>
-  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
-
+  <h1 id="home-h">Nossos Projetos</h1>
+  {% image './src/images/cabinets2.jpg', 'armários', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
-<!--                   Gallery                    -->
+<!--                   GALERIA                     -->
 <!-- ============================================ -->
 
 <section id="gallery">
   <div class="cs-container">
     <div class="cs-image-group">
-      <!-- Row 1-->
+      <!-- Linha 1 -->
       <div class="cs-row cs-row-1">
-        {% image './src/images/portfolio/port1.jpg', 'new hallway', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port4.jpg', 'new home construction', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port7.jpg', 'building a new wall', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+        {% image './src/images/portfolio/port1.jpg', 'novo corredor', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
+        {% image './src/images/portfolio/port4.jpg', 'construção de uma nova casa', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
+        {% image './src/images/portfolio/port7.jpg', 'construindo uma nova parede', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
       </div>
-      <!-- Row 2 -->
+      <!-- Linha 2 -->
       <div class="cs-row cs-row-2">
-        {% image './src/images/portfolio/port2.jpg', 'new kitchen', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port5.jpg', 'apartment addition', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port8.jpg', 'kew kitchen cabinets', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+        {% image './src/images/portfolio/port2.jpg', 'nova cozinha', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
+        {% image './src/images/portfolio/port5.jpg', 'ampliação de apartamento', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
+        {% image './src/images/portfolio/port8.jpg', 'novos armários de cozinha', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
       </div>
-      <!-- Row 3 -->
+      <!-- Linha 3 -->
       <div class="cs-row cs-row-3">
-        {% image './src/images/portfolio/port3.jpg', 'new kitchen', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port6.jpg', 'apartment addition', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port9.jpg', 'kew kitchen cabinets', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+        {% image './src/images/portfolio/port3.jpg', 'nova cozinha', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
+        {% image './src/images/portfolio/port6.jpg', 'ampliação de apartamento', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
+        {% image './src/images/portfolio/port9.jpg', 'novos armários de cozinha', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
       </div>
     </div>
-    <a href="/contact" class="button-solid">Get Free Quote</a>
+    <a href="/contato" class="button-solid">Solicite um Orçamento Gratuito</a>
   </div>
 </section>
 
 <!-- ============================================ -->
-<!--             Final Call to Action             -->
+<!--             CHAMADA PARA AÇÃO                -->
 <!-- ============================================ -->
 
 <section id="cta">
   <div class="container">
-    <h2 class="title">Get It Done <br> With Us Today</h2>
+    <h2 class="title">Realize Seu Projeto <br> Conosco Hoje</h2>
     <p>
-            Say something catchy, informative, and encouraging to click the button to go to the contact page.  I like to add these to the bottom of all pages.
-        </p>
-    <a href="/contact.html" class="button-solid">Free Estimate</a>
+      Escreva algo chamativo, informativo e que incentive o visitante a clicar no botão para ir à página de contato. Eu gosto de adicionar essa seção no final de todas as páginas.
+    </p>
+    <a href="/contato.html" class="button-solid">Solicitar Orçamento</a>
   </div>
-  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/cabinets2.jpg', 'armários de cozinha', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>

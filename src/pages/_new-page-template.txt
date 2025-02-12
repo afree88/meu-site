@@ -1,14 +1,14 @@
 ---
-layout: 'base.html' 
-description: "Meta description for the page"
-metaTitle: 'Title that shows up on social OG tags'
-tagTitle: 'Title that shows up on google, and is concatenated with | {{ client.name }}'
+layout: 'base.html'
+description: "Meta descrição para a página"
+metaTitle: 'Título que aparece nas tags OG sociais'
+tagTitle: 'Título que aparece no Google, concatenado com | {{ client.name }}'
 preloadImg: '/images/imageName.format'
 preloadCSS: '/css/fileName.css'
-permalink: 'page/'
+permalink: 'pagina/'
 eleventyNavigation:
-    key: Navigation Name
+    key: Nome da Navegação
     order: 1000
 ---
 
-<!-- Enter html code below -->
+<!-- Insira o código HTML abaixo -->

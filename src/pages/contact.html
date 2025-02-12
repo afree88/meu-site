@@ -1,76 +1,76 @@
 ---
 layout: 'base.html'
-description: 'Meta description for the page'
-metaTitle: 'Title that shows up on google searches'
-tagTitle: 'Contact'
+description: 'Meta descrição para a página'
+metaTitle: 'Título que aparece nas pesquisas do Google'
+tagTitle: 'Contato'
 preloadImg: '/images/cabinets2-1920w.webp'
 preloadCSS: '/css/contact.css'
-permalink: 'contact/'
+permalink: 'contato/'
 eleventyNavigation:
-    key: Contact
+    key: Contato
     order: 600
 ---
 
-<!-- Enter html code below -->
+<!-- Insira o código HTML abaixo -->
 
 <!-- ============================================ -->
-<!--                    LANDING                   -->
+<!--                    CABEÇALHO                  -->
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">Contact Us</h1>
-  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  <h1 id="home-h">Fale Conosco</h1>
+  {% image './src/images/cabinets2.jpg', 'armários', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
-<!--                Contact Form                  -->
+<!--                 FORMULÁRIO DE CONTATO        -->
 <!-- ============================================ -->
 
 <section id="cs-contact">
   <div class="cs-container">
-    <form id="cs-form" name="Contact Form" method="post">
+    <form id="cs-form" name="Formulário de Contato" method="post">
       <div class="cs-content">
-        <span class="cs-topper">Contact</span>
-        <h2 class="cs-title">Get in Touch</h2>
+        <span class="cs-topper">Contato</span>
+        <h2 class="cs-title">Entre em Contato</h2>
         <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                </p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+        </p>
       </div>
       <label>
-                Name
-                <input required type="text" id="name" name="name" placeholder="Name">
+        Nome
+        <input required type="text" id="name" name="name" placeholder="Nome">
       </label>
       <label>
-                Email
-                <input required type="text" id="email" name="email" placeholder="Email">
+        E-mail
+        <input required type="text" id="email" name="email" placeholder="E-mail">
       </label>
       <label>
-                Phone
-                <input required type="text" id="phone" name="phone" placeholder="Phone">
+        Telefone
+        <input required type="text" id="phone" name="phone" placeholder="Telefone">
       </label>
       <label>
-                How Did You Find Us
-                <input type="text" id="find" name="find-us" placeholder="How did you find us?">
+        Como nos encontrou?
+        <input type="text" id="find" name="find-us" placeholder="Como nos encontrou?">
       </label>
       <label class="cs-label-message">
-                Message
-                <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+        Mensagem
+        <textarea required name="Message" id="message" placeholder="Escreva sua mensagem..."></textarea>
       </label>
-      <button class="cs-button-solid" type="submit">Submit Message</button>
+      <button class="cs-button-solid" type="submit">Enviar Mensagem</button>
     </form>
     <div class="cs-right-section">
-      <!--Email-->
-      <span class="cs-header">Email</span>
+      <!--E-mail-->
+      <span class="cs-header">E-mail</span>
       <a class="cs-link" href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-      <!--Phone-->
-      <span class="cs-header">Phone</span>
+      <!--Telefone-->
+      <span class="cs-header">Telefone</span>
       <a class="cs-link" href="tel:219-555-1234">(219) 555-1234</a>
-      <!--Address-->
-      <span class="cs-header">Address</span>
+      <!--Endereço-->
+      <span class="cs-header">Endereço</span>
       <a class="cs-link" href="">2553 Woodbridge Lane, <span class="cs-block">Boston Ware 120</span></a>
 
-      <!-- Background Image-->
-      {% image './src/images/skyscraper.jpg', 'building', '', 'lazy'%}
+      <!-- Imagem de Fundo -->
+      {% image './src/images/skyscraper.jpg', 'prédio', '', 'lazy'%}
     </div>
   </div>
 </section>

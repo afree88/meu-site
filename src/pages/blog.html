@@ -1,7 +1,7 @@
 ---
 layout: 'base.html'
-description: 'Meta description for the page'
-metaTitle: 'Title that shows up on google searches'
+description: 'Meta descrição para a página'
+metaTitle: 'Título que aparece nas pesquisas do Google'
 tagTitle: 'Blog'
 preloadImg: '/images/cabinets2-1920w.webp'
 preloadCSS: '/css/blog.css'
@@ -11,33 +11,33 @@ eleventyNavigation:
     order: 500
 ---
 
-<!-- Enter html code below -->
+<!-- Insira o código HTML abaixo -->
 <!-- ============================================ -->
-<!--                    LANDING                   -->
+<!--                    CABEÇALHO                  -->
 <!-- ============================================ -->
 
 <section id="int-hero">
     <h1 id="home-h">Blog</h1>
-    {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+    {% image './src/images/cabinets2.jpg', 'armários', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
-<!--              Main Blog Content               -->
+<!--              CONTEÚDO PRINCIPAL               -->
 <!-- ============================================ -->
 
 <div class="blog-container main-content-wrapper">
-    <!--Main content -->
+    <!-- Conteúdo principal -->
     <div class="main-content">
         <!-- ============================================ -->
-        <!--                 Blog Articles                -->
+        <!--                 Artigos do Blog               -->
         <!-- ============================================ -->
 
         {% if collections.post | length == 0 %}
-            <h1>No Recent Posts</h1>
+            <h1>Sem postagens recentes</h1>
         {% endif %}
         {%- for post in collections.post | reverse -%}
             <article class="recent-articles">
-                <!--Main Article Image-->
+                <!-- Imagem Principal do Artigo -->
                 <picture class="blog-mainImage">
                     <img
                         src="{{ post.data.image }}"
@@ -47,14 +47,14 @@ eleventyNavigation:
                         decoding="async"
 />
                 </picture>
-                <!--Article Info-->
+                <!-- Informações do Artigo -->
                 <div class="article-group">
                     <div class="blog-authorGroup">
-                        <!--Author Image-->
+                        <!-- Imagem do Autor -->
                         <picture class="blog-author-img">
                             <img
               src="/assets/svgs/profile.svg"
-              alt="house"
+              alt="perfil"
               width="32"
               height="32"
               decoding="async"
@@ -62,7 +62,7 @@ eleventyNavigation:
                         </picture>
                         <span class="blog-author">{{ post.data.author }}</span>
                         <span aria-hidden="true" class="blog-dot"></span>
-                        <!--Blog Date-->
+                        <!-- Data da Postagem -->
                         <span class="blog-date">{{ post.date | postDate }}</span>
                     </div>
                     <h2 class="blog-h1">
@@ -71,14 +71,14 @@ eleventyNavigation:
                     <p class="blog-desc">
                         {{ post.data.blogDescription }}
                     </p>
-                    <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
+                    <a href="{{ post.url }}" class="blog-link">Continuar lendo</a>
                 </div>
             </article>
         {%- endfor -%}
     </div>
 
     <!-- ============================================ -->
-    <!--                Featured Posts                -->
+    <!--                Posts em Destaque             -->
     <!-- ============================================ -->
 
     {% include 'featured-post.html' %}

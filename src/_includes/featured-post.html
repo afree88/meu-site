@@ -1,7 +1,7 @@
 <div class="blog-sidebar">
-  <!--Featured-->
+  <!--Postagens em Destaque-->
   <div class="blog-featured-group">
-    <span class="blog-header">Featured Posts</span>
+    <span class="blog-header">Postagens em Destaque</span>
     {%- for post in collections.featured | reverse -%}
     <a class="blog-feature" href="{{ post.url }}">
       <picture class="blog-featureImage">
@@ -20,5 +20,5 @@
     </a>
     {%- endfor -%}
   </div>
-  <!--Add anything else in the sidebar below-->
+  <!--Adicione qualquer outro conteúdo na barra lateral abaixo-->
 </div>
